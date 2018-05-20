@@ -40,6 +40,9 @@
 		4CE06C5720B186C2000E80C2 /* SGScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5620B186C2000E80C2 /* SGScene.swift */; };
 		4CE06C5A20B18E65000E80C2 /* IOS_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5920B18E65000E80C2 /* IOS_Responder.swift */; };
 		4CE06C5C20B18E7C000E80C2 /* OSX_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5B20B18E7C000E80C2 /* OSX_Responder.swift */; };
+		4CE06C5E20B1913C000E80C2 /* SGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */; };
+		4CE06C6020B19152000E80C2 /* SGResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5F20B19152000E80C2 /* SGResolution.swift */; };
+		4CE06C6220B193C5000E80C2 /* SGGameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		4CE06C5620B186C2000E80C2 /* SGScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGScene.swift; sourceTree = "<group>"; };
 		4CE06C5920B18E65000E80C2 /* IOS_Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Responder.swift; sourceTree = "<group>"; };
 		4CE06C5B20B18E7C000E80C2 /* OSX_Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_Responder.swift; sourceTree = "<group>"; };
+		4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExtensions.swift; sourceTree = "<group>"; };
+		4CE06C5F20B19152000E80C2 /* SGResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGResolution.swift; sourceTree = "<group>"; };
+		4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGGameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +292,8 @@
 		4CE06C5220B1843B000E80C2 /* SG-Engine */ = {
 			isa = PBXGroup;
 			children = (
+				4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */,
+				4CE06C5F20B19152000E80C2 /* SGResolution.swift */,
 				4CE06C5820B18E27000E80C2 /* SGSceneResponders */,
 				4CE06C5620B186C2000E80C2 /* SGScene.swift */,
 			);
@@ -295,6 +303,7 @@
 		4CE06C5320B18457000E80C2 /* SG-Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */,
 			);
 			path = "SG-Controllers";
 			sourceTree = "<group>";
@@ -475,13 +484,16 @@
 				4CE06C5720B186C2000E80C2 /* SGScene.swift in Sources */,
 				4CA1777E20AFD00300F13100 /* GameScene.swift in Sources */,
 				4CA1778020AFD00300F13100 /* GameViewController.swift in Sources */,
+				4CE06C6020B19152000E80C2 /* SGResolution.swift in Sources */,
 				4CE06C5A20B18E65000E80C2 /* IOS_Responder.swift in Sources */,
 				4C2FA09120B00DB10084972C /* superBoy.swift in Sources */,
 				4C2FA09B20B019E70084972C /* mainMenu.swift in Sources */,
 				4C2FA09320B017460084972C /* audioPlayer.swift in Sources */,
 				4CE06C5C20B18E7C000E80C2 /* OSX_Responder.swift in Sources */,
+				4CE06C5E20B1913C000E80C2 /* SGExtensions.swift in Sources */,
 				4C2FA08F20B00D250084972C /* Help.swift in Sources */,
 				4CA1777820AFD00300F13100 /* AppDelegate.swift in Sources */,
+				4CE06C6220B193C5000E80C2 /* SGGameSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

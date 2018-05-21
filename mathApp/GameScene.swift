@@ -17,14 +17,12 @@ class GameScene: SKScene {
         SKTAudio.sharedInstance().playBackgroundMusic("bg.mp3")
         SKTAudio.sharedInstance().backgroundMusicPlayer?.volume = 0.4
     
-    //Transition to Main Menu
-        let nextScene = mainMenu(size: self.scene!.size)
-        nextScene.scaleMode = self.scaleMode
-        self.view?.presentScene(nextScene)
-    }
+   
     
     
 
+    }
+    
 }
     
 

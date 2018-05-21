@@ -48,6 +48,24 @@
 		4C373B2420B280800069FBC0 /* blast.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B1C20B2807F0069FBC0 /* blast.gif */; };
 		4C373B2520B280800069FBC0 /* pugFly.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B1D20B280800069FBC0 /* pugFly.gif */; };
 		4C373B2720B2C0CA0069FBC0 /* instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B2620B2C0C90069FBC0 /* instructions.png */; };
+		4C373B2A20B2C4500069FBC0 /* ethnocentric rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B2820B2C44F0069FBC0 /* ethnocentric rg it.ttf */; };
+		4C373B2B20B2C4500069FBC0 /* ethnocentric rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B2920B2C44F0069FBC0 /* ethnocentric rg.ttf */; };
+		4C373B2D20B2C5CB0069FBC0 /* interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B2C20B2C5CB0069FBC0 /* interior.jpg */; };
+		4C373B2F20B2DF040069FBC0 /* whiteSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B2E20B2DF040069FBC0 /* whiteSquare.png */; };
+		4C373B3C20B2E4040069FBC0 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3020B2E3E90069FBC0 /* cross.png */; };
+		4C373B3D20B2E4040069FBC0 /* alien7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3120B2E3EB0069FBC0 /* alien7.png */; };
+		4C373B3E20B2E4040069FBC0 /* alien3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3220B2E3EC0069FBC0 /* alien3.png */; };
+		4C373B3F20B2E4040069FBC0 /* alien8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3320B2E3ED0069FBC0 /* alien8.png */; };
+		4C373B4020B2E4040069FBC0 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3420B2E3EE0069FBC0 /* tick.png */; };
+		4C373B4120B2E4040069FBC0 /* alien5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3520B2E3F20069FBC0 /* alien5.png */; };
+		4C373B4220B2E4040069FBC0 /* alien0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3620B2E3F60069FBC0 /* alien0.png */; };
+		4C373B4320B2E4040069FBC0 /* alien6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3720B2E3FC0069FBC0 /* alien6.png */; };
+		4C373B4420B2E4040069FBC0 /* alien2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3820B2E3FE0069FBC0 /* alien2.png */; };
+		4C373B4520B2E4040069FBC0 /* alien4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3920B2E4000069FBC0 /* alien4.png */; };
+		4C373B4620B2E4040069FBC0 /* alien9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3A20B2E4010069FBC0 /* alien9.png */; };
+		4C373B4720B2E4040069FBC0 /* alien1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B3B20B2E4030069FBC0 /* alien1.png */; };
+		4C373B4A20B2E90E0069FBC0 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B4820B2E90B0069FBC0 /* minus.png */; };
+		4C373B4B20B2E90E0069FBC0 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B4920B2E90C0069FBC0 /* plus.png */; };
 		4CA1777820AFD00300F13100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777720AFD00300F13100 /* AppDelegate.swift */; };
 		4CA1777E20AFD00300F13100 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777D20AFD00300F13100 /* GameScene.swift */; };
 		4CA1778020AFD00300F13100 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777F20AFD00300F13100 /* GameViewController.swift */; };
@@ -115,6 +133,24 @@
 		4C373B1C20B2807F0069FBC0 /* blast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blast.gif; sourceTree = "<group>"; };
 		4C373B1D20B280800069FBC0 /* pugFly.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pugFly.gif; sourceTree = "<group>"; };
 		4C373B2620B2C0C90069FBC0 /* instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instructions.png; sourceTree = "<group>"; };
+		4C373B2820B2C44F0069FBC0 /* ethnocentric rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg it.ttf"; sourceTree = "<group>"; };
+		4C373B2920B2C44F0069FBC0 /* ethnocentric rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg.ttf"; sourceTree = "<group>"; };
+		4C373B2C20B2C5CB0069FBC0 /* interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interior.jpg; sourceTree = "<group>"; };
+		4C373B2E20B2DF040069FBC0 /* whiteSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteSquare.png; sourceTree = "<group>"; };
+		4C373B3020B2E3E90069FBC0 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		4C373B3120B2E3EB0069FBC0 /* alien7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien7.png; sourceTree = "<group>"; };
+		4C373B3220B2E3EC0069FBC0 /* alien3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien3.png; sourceTree = "<group>"; };
+		4C373B3320B2E3ED0069FBC0 /* alien8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien8.png; sourceTree = "<group>"; };
+		4C373B3420B2E3EE0069FBC0 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		4C373B3520B2E3F20069FBC0 /* alien5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien5.png; sourceTree = "<group>"; };
+		4C373B3620B2E3F60069FBC0 /* alien0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien0.png; sourceTree = "<group>"; };
+		4C373B3720B2E3FC0069FBC0 /* alien6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien6.png; sourceTree = "<group>"; };
+		4C373B3820B2E3FE0069FBC0 /* alien2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien2.png; sourceTree = "<group>"; };
+		4C373B3920B2E4000069FBC0 /* alien4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien4.png; sourceTree = "<group>"; };
+		4C373B3A20B2E4010069FBC0 /* alien9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien9.png; sourceTree = "<group>"; };
+		4C373B3B20B2E4030069FBC0 /* alien1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien1.png; sourceTree = "<group>"; };
+		4C373B4820B2E90B0069FBC0 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		4C373B4920B2E90C0069FBC0 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		4CA1777420AFD00300F13100 /* mathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA1777720AFD00300F13100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA1777D20AFD00300F13100 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -192,6 +228,8 @@
 		4CA1776B20AFD00300F13100 = {
 			isa = PBXGroup;
 			children = (
+				4C373B2820B2C44F0069FBC0 /* ethnocentric rg it.ttf */,
+				4C373B2920B2C44F0069FBC0 /* ethnocentric rg.ttf */,
 				4C2FA08B20AFE8BA0084972C /* Assets.xcassets */,
 				4C2FA07320AFD64F0084972C /* Assets */,
 				4CA1777620AFD00300F13100 /* mathApp */,
@@ -220,6 +258,22 @@
 				4C2FA08E20B00D250084972C /* Help.swift */,
 				4CA1777F20AFD00300F13100 /* GameViewController.swift */,
 				4C373B0C20B252AC0069FBC0 /* Main.storyboard */,
+				4C373B4820B2E90B0069FBC0 /* minus.png */,
+				4C373B4920B2E90C0069FBC0 /* plus.png */,
+				4C373B3620B2E3F60069FBC0 /* alien0.png */,
+				4C373B3B20B2E4030069FBC0 /* alien1.png */,
+				4C373B3820B2E3FE0069FBC0 /* alien2.png */,
+				4C373B3220B2E3EC0069FBC0 /* alien3.png */,
+				4C373B3920B2E4000069FBC0 /* alien4.png */,
+				4C373B3520B2E3F20069FBC0 /* alien5.png */,
+				4C373B3720B2E3FC0069FBC0 /* alien6.png */,
+				4C373B3120B2E3EB0069FBC0 /* alien7.png */,
+				4C373B3320B2E3ED0069FBC0 /* alien8.png */,
+				4C373B3A20B2E4010069FBC0 /* alien9.png */,
+				4C373B3020B2E3E90069FBC0 /* cross.png */,
+				4C373B3420B2E3EE0069FBC0 /* tick.png */,
+				4C373B2E20B2DF040069FBC0 /* whiteSquare.png */,
+				4C373B2C20B2C5CB0069FBC0 /* interior.jpg */,
 				4C373B2620B2C0C90069FBC0 /* instructions.png */,
 				4C373B1720B2807E0069FBC0 /* alien.gif */,
 				4C373B1820B2807E0069FBC0 /* alienDying.gif */,
@@ -357,6 +411,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C373B3C20B2E4040069FBC0 /* cross.png in Resources */,
+				4C373B2D20B2C5CB0069FBC0 /* interior.jpg in Resources */,
+				4C373B2A20B2C4500069FBC0 /* ethnocentric rg it.ttf in Resources */,
+				4C373B2B20B2C4500069FBC0 /* ethnocentric rg.ttf in Resources */,
 				4C373B0220B2528D0069FBC0 /* Help.png in Resources */,
 				4C373B2320B280800069FBC0 /* invincible.gif in Resources */,
 				4C373B0620B2528D0069FBC0 /* High Score.png in Resources */,
@@ -364,13 +422,18 @@
 				4C373B0720B2528D0069FBC0 /* How to.png in Resources */,
 				4C2FA07C20AFD6770084972C /* Help.png in Resources */,
 				4C373B0B20B2528D0069FBC0 /* superboy.png in Resources */,
+				4C373B4B20B2E90E0069FBC0 /* plus.png in Resources */,
 				4C2FA07D20AFD6770084972C /* Settings and High Score.png in Resources */,
 				4C2FA08220AFD6770084972C /* ethnocentric in Resources */,
+				4C373B3E20B2E4040069FBC0 /* alien3.png in Resources */,
+				4C373B4620B2E4040069FBC0 /* alien9.png in Resources */,
+				4C373B4720B2E4040069FBC0 /* alien1.png in Resources */,
 				4C373B0420B2528D0069FBC0 /* Story.png in Resources */,
 				4C373B0920B2528D0069FBC0 /* Settings and High Score.png in Resources */,
 				4C2FA08320AFD6770084972C /* Story.png in Resources */,
 				4C373B0D20B252AC0069FBC0 /* Main.storyboard in Resources */,
 				4C373B2420B280800069FBC0 /* blast.gif in Resources */,
+				4C373B4120B2E4040069FBC0 /* alien5.png in Resources */,
 				4C373B0120B2528D0069FBC0 /* halfearth.jpg in Resources */,
 				4C373B1E20B280800069FBC0 /* sbFly.gif in Resources */,
 				4C2FA09720B019710084972C /* success.wav in Resources */,
@@ -381,9 +444,18 @@
 				4C2FA08620AFDA660084972C /* superboy.png in Resources */,
 				4C2FA08C20AFE8BA0084972C /* Stars.sks in Resources */,
 				4C373B0820B2528D0069FBC0 /* pug right.png in Resources */,
+				4C373B4420B2E4040069FBC0 /* alien2.png in Resources */,
 				4C2FA08D20AFE8BA0084972C /* Assets.xcassets in Resources */,
+				4C373B3F20B2E4040069FBC0 /* alien8.png in Resources */,
+				4C373B4220B2E4040069FBC0 /* alien0.png in Resources */,
+				4C373B3D20B2E4040069FBC0 /* alien7.png in Resources */,
+				4C373B4020B2E4040069FBC0 /* tick.png in Resources */,
+				4C373B2F20B2DF040069FBC0 /* whiteSquare.png in Resources */,
+				4C373B4320B2E4040069FBC0 /* alien6.png in Resources */,
 				4C373B2220B280800069FBC0 /* pugHurt.gif in Resources */,
+				4C373B4A20B2E90E0069FBC0 /* minus.png in Resources */,
 				4C373B1520B280180069FBC0 /* ques.png in Resources */,
+				4C373B4520B2E4040069FBC0 /* alien4.png in Resources */,
 				4C373B0A20B2528D0069FBC0 /* Main Menu.png in Resources */,
 				4C373B0520B2528D0069FBC0 /* pug left.gif in Resources */,
 				4C2FA08720AFDA660084972C /* pug.png in Resources */,

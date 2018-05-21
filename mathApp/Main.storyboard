@@ -30,6 +30,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRc-I0-14r">
+                                <rect key="frame" x="20" y="202" width="275" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="ADDITION" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddq-Is-Vrk">
+                                <rect key="frame" x="20" y="115" width="275" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="SUBTRACTION" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-bv-Shd">
                                 <rect key="frame" x="356" y="29" width="275" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,11 +65,15 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-FV-3P9">
-                                <rect key="frame" x="20" y="92" width="275" height="208"/>
+                                <rect key="frame" x="20" y="159" width="275" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-KC-9Dg">
                                 <rect key="frame" x="356" y="92" width="275" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-Vu-Bkz">
+                                <rect key="frame" x="20" y="248" width="275" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -805,10 +825,10 @@
             </objects>
             <point key="canvasLocation" x="2806" y="1513"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Level-->
         <scene sceneID="o1j-4M-ep6">
             <objects>
-                <viewController id="xph-hA-db3" sceneMemberID="viewController">
+                <viewController title="Choose Level" id="xph-hA-db3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxj-yM-KuN">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,54 +838,50 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUe-FV-xsf">
-                                <rect key="frame" x="20" y="10" width="275" height="55"/>
+                                <rect key="frame" x="44" y="10" width="275" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <state key="normal" title="ADDITION" backgroundImage="Empty.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ii-WY-JAm">
-                                <rect key="frame" x="443" y="168" width="46" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="RiT-Su-eUh" kind="show" id="Bru-rZ-OyB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-ol-qsz">
-                                <rect key="frame" x="158" y="167" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="CWo-Pz-t2Y" kind="show" id="G6a-Ao-Che"/>
+                                    <segue destination="CWo-Pz-t2Y" kind="show" id="ruK-Zn-RSf"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="qoM-2q-zwU">
-                                <rect key="frame" x="20" y="83" width="275" height="244"/>
+                                <rect key="frame" x="44" y="83" width="275" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrX-vB-WKi">
+                                <rect key="frame" x="73" y="92" width="220" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plus.png"/>
+                                <connections>
+                                    <segue destination="CWo-Pz-t2Y" kind="show" id="4oK-8K-d86"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pya-Ig-SXg">
-                                <rect key="frame" x="372" y="83" width="275" height="244"/>
+                                <rect key="frame" x="348" y="83" width="275" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDE-Ov-Zwu">
-                                <rect key="frame" x="372" y="10" width="275" height="55"/>
+                                <rect key="frame" x="348" y="10" width="275" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <state key="normal" title="SUBTRACTION" backgroundImage="Empty.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrX-vB-WKi">
-                                <rect key="frame" x="49" y="92" width="220" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="plus.png"/>
+                                <connections>
+                                    <segue destination="RiT-Su-eUh" kind="show" id="U4A-Ab-bVY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBc-c4-ZYx">
-                                <rect key="frame" x="445" y="148" width="128" height="128"/>
+                                <rect key="frame" x="421" y="148" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="minus.png"/>
+                                <connections>
+                                    <segue destination="RiT-Su-eUh" kind="show" id="7Jz-6E-6Fy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -981,9 +997,27 @@
                                 <state key="normal" image="How to.png"/>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-uM-2En">
-                                <rect key="frame" x="20" y="99" width="627" height="178"/>
+                                <rect key="frame" x="20" y="83" width="627" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXk-Wn-vUj">
+                                <rect key="frame" x="20" y="83" width="627" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">HOW TO PLAY 
+
+Tap the Start Buttom to enter the game. 
+
+Once the game has begun, you will see a math question at the top of the screen                                        
+From there you will only need to tap on the Alien who stands infront of the correct answer 
+
+For example if the question is 2+1 = ?
+I will tap on the Alien who is infront of the number 3
+
+If you want to quit the game or need to read the help again,  tap the menu button in the bottom left corner</mutableString>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C7L-HO-Fjd"/>
@@ -1018,6 +1052,8 @@
         <image name="whiteSquare.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YqD-wY-3sl"/>
+        <segue reference="U4A-Ab-bVY"/>
+        <segue reference="ruK-Zn-RSf"/>
+        <segue reference="Zjj-se-UKp"/>
     </inferredMetricsTieBreakers>
 </document>

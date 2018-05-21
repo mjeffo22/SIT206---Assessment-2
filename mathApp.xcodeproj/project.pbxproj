@@ -20,29 +20,32 @@
 		4C2FA08C20AFE8BA0084972C /* Stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA08A20AFE8BA0084972C /* Stars.sks */; };
 		4C2FA08D20AFE8BA0084972C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA08B20AFE8BA0084972C /* Assets.xcassets */; };
 		4C2FA08F20B00D250084972C /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FA08E20B00D250084972C /* Help.swift */; };
-		4C2FA09120B00DB10084972C /* superBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FA09020B00DB10084972C /* superBoy.swift */; };
 		4C2FA09320B017460084972C /* audioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FA09220B017460084972C /* audioPlayer.swift */; };
 		4C2FA09720B019710084972C /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA09420B019710084972C /* success.wav */; };
 		4C2FA09820B019710084972C /* wrongAnswer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA09520B019710084972C /* wrongAnswer.wav */; };
 		4C2FA09920B019710084972C /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FA09620B019710084972C /* bg.mp3 */; };
 		4C2FA09B20B019E70084972C /* mainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FA09A20B019E70084972C /* mainMenu.swift */; };
+		4C373B0120B2528D0069FBC0 /* halfearth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AF620B2528B0069FBC0 /* halfearth.jpg */; };
+		4C373B0220B2528D0069FBC0 /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AF720B2528B0069FBC0 /* Help.png */; };
+		4C373B0320B2528D0069FBC0 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AF820B2528B0069FBC0 /* Settings.png */; };
+		4C373B0420B2528D0069FBC0 /* Story.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AF920B2528C0069FBC0 /* Story.png */; };
+		4C373B0520B2528D0069FBC0 /* pug left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFA20B2528C0069FBC0 /* pug left.gif */; };
+		4C373B0620B2528D0069FBC0 /* High Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFB20B2528C0069FBC0 /* High Score.png */; };
+		4C373B0720B2528D0069FBC0 /* How to.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFC20B2528C0069FBC0 /* How to.png */; };
+		4C373B0820B2528D0069FBC0 /* pug right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFD20B2528C0069FBC0 /* pug right.png */; };
+		4C373B0920B2528D0069FBC0 /* Settings and High Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFE20B2528C0069FBC0 /* Settings and High Score.png */; };
+		4C373B0A20B2528D0069FBC0 /* Main Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373AFF20B2528D0069FBC0 /* Main Menu.png */; };
+		4C373B0B20B2528D0069FBC0 /* superboy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B0020B2528D0069FBC0 /* superboy.png */; };
+		4C373B0D20B252AC0069FBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C373B0C20B252AC0069FBC0 /* Main.storyboard */; };
 		4CA1777820AFD00300F13100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777720AFD00300F13100 /* AppDelegate.swift */; };
 		4CA1777A20AFD00300F13100 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1777920AFD00300F13100 /* GameScene.sks */; };
 		4CA1777C20AFD00300F13100 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1777B20AFD00300F13100 /* Actions.sks */; };
 		4CA1777E20AFD00300F13100 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777D20AFD00300F13100 /* GameScene.swift */; };
 		4CA1778020AFD00300F13100 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1777F20AFD00300F13100 /* GameViewController.swift */; };
-		4CA1778320AFD00300F13100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1778120AFD00300F13100 /* Main.storyboard */; };
 		4CA1778520AFD00500F13100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1778420AFD00500F13100 /* Assets.xcassets */; };
 		4CA1778820AFD00500F13100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1778620AFD00500F13100 /* LaunchScreen.storyboard */; };
 		4CA1779320AFD00600F13100 /* mathAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1779220AFD00600F13100 /* mathAppTests.swift */; };
 		4CA1779E20AFD00600F13100 /* mathAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1779D20AFD00600F13100 /* mathAppUITests.swift */; };
-		4CE06C5120B18429000E80C2 /* SKTUtils-master in Resources */ = {isa = PBXBuildFile; fileRef = 4CE06C5020B18429000E80C2 /* SKTUtils-master */; };
-		4CE06C5720B186C2000E80C2 /* SGScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5620B186C2000E80C2 /* SGScene.swift */; };
-		4CE06C5A20B18E65000E80C2 /* IOS_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5920B18E65000E80C2 /* IOS_Responder.swift */; };
-		4CE06C5C20B18E7C000E80C2 /* OSX_Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5B20B18E7C000E80C2 /* OSX_Responder.swift */; };
-		4CE06C5E20B1913C000E80C2 /* SGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */; };
-		4CE06C6020B19152000E80C2 /* SGResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C5F20B19152000E80C2 /* SGResolution.swift */; };
-		4CE06C6220B193C5000E80C2 /* SGGameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,19 +79,29 @@
 		4C2FA08A20AFE8BA0084972C /* Stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Stars.sks; sourceTree = "<group>"; };
 		4C2FA08B20AFE8BA0084972C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C2FA08E20B00D250084972C /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
-		4C2FA09020B00DB10084972C /* superBoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = superBoy.swift; sourceTree = "<group>"; };
 		4C2FA09220B017460084972C /* audioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioPlayer.swift; sourceTree = "<group>"; };
 		4C2FA09420B019710084972C /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		4C2FA09520B019710084972C /* wrongAnswer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrongAnswer.wav; sourceTree = "<group>"; };
 		4C2FA09620B019710084972C /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
 		4C2FA09A20B019E70084972C /* mainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenu.swift; sourceTree = "<group>"; };
+		4C373AF620B2528B0069FBC0 /* halfearth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = halfearth.jpg; sourceTree = "<group>"; };
+		4C373AF720B2528B0069FBC0 /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Help.png; path = ../Help.png; sourceTree = "<group>"; };
+		4C373AF820B2528B0069FBC0 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ../Settings.png; sourceTree = "<group>"; };
+		4C373AF920B2528C0069FBC0 /* Story.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Story.png; path = ../Story.png; sourceTree = "<group>"; };
+		4C373AFA20B2528C0069FBC0 /* pug left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pug left.gif"; sourceTree = "<group>"; };
+		4C373AFB20B2528C0069FBC0 /* High Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High Score.png"; path = "../High Score.png"; sourceTree = "<group>"; };
+		4C373AFC20B2528C0069FBC0 /* How to.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "How to.png"; path = "../How to.png"; sourceTree = "<group>"; };
+		4C373AFD20B2528C0069FBC0 /* pug right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pug right.png"; sourceTree = "<group>"; };
+		4C373AFE20B2528C0069FBC0 /* Settings and High Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings and High Score.png"; path = "../Settings and High Score.png"; sourceTree = "<group>"; };
+		4C373AFF20B2528D0069FBC0 /* Main Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main Menu.png"; path = "../Main Menu.png"; sourceTree = "<group>"; };
+		4C373B0020B2528D0069FBC0 /* superboy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superboy.png; path = ../superboy.png; sourceTree = "<group>"; };
+		4C373B0C20B252AC0069FBC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4CA1777420AFD00300F13100 /* mathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA1777720AFD00300F13100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA1777920AFD00300F13100 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		4CA1777B20AFD00300F13100 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		4CA1777D20AFD00300F13100 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		4CA1777F20AFD00300F13100 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		4CA1778220AFD00300F13100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CA1778420AFD00500F13100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA1778720AFD00500F13100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA1778920AFD00500F13100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,13 +111,6 @@
 		4CA1779920AFD00600F13100 /* mathAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mathAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA1779D20AFD00600F13100 /* mathAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathAppUITests.swift; sourceTree = "<group>"; };
 		4CA1779F20AFD00600F13100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CE06C5020B18429000E80C2 /* SKTUtils-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SKTUtils-master"; sourceTree = "<group>"; };
-		4CE06C5620B186C2000E80C2 /* SGScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGScene.swift; sourceTree = "<group>"; };
-		4CE06C5920B18E65000E80C2 /* IOS_Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Responder.swift; sourceTree = "<group>"; };
-		4CE06C5B20B18E7C000E80C2 /* OSX_Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_Responder.swift; sourceTree = "<group>"; };
-		4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExtensions.swift; sourceTree = "<group>"; };
-		4CE06C5F20B19152000E80C2 /* SGResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGResolution.swift; sourceTree = "<group>"; };
-		4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGGameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,17 @@
 		4C2FA07320AFD64F0084972C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4C373AF620B2528B0069FBC0 /* halfearth.jpg */,
+				4C373AF720B2528B0069FBC0 /* Help.png */,
+				4C373AFB20B2528C0069FBC0 /* High Score.png */,
+				4C373AFC20B2528C0069FBC0 /* How to.png */,
+				4C373AFF20B2528D0069FBC0 /* Main Menu.png */,
+				4C373AFA20B2528C0069FBC0 /* pug left.gif */,
+				4C373AFD20B2528C0069FBC0 /* pug right.png */,
+				4C373AFE20B2528C0069FBC0 /* Settings and High Score.png */,
+				4C373AF820B2528B0069FBC0 /* Settings.png */,
+				4C373AF920B2528C0069FBC0 /* Story.png */,
+				4C373B0020B2528D0069FBC0 /* superboy.png */,
 				4C2FA07A20AFD6760084972C /* ethnocentric */,
 				4C2FA07420AFD6760084972C /* Help.png */,
 				4C2FA07620AFD6760084972C /* High Score.png */,
@@ -178,12 +195,6 @@
 		4CA1777620AFD00300F13100 /* mathApp */ = {
 			isa = PBXGroup;
 			children = (
-				4CE06C5520B184B5000E80C2 /* Entities */,
-				4CE06C4B20B1834B000E80C2 /* Components */,
-				4CE06C4A20B1833F000E80C2 /* Resources */,
-				4CE06C4820B18331000E80C2 /* Libraries */,
-				4CE06C4720B18325000E80C2 /* States */,
-				4CE06C4620B18319000E80C2 /* Scenes */,
 				4CA1777720AFD00300F13100 /* AppDelegate.swift */,
 				4CA1777920AFD00300F13100 /* GameScene.sks */,
 				4CA1777B20AFD00300F13100 /* Actions.sks */,
@@ -191,9 +202,8 @@
 				4C2FA09A20B019E70084972C /* mainMenu.swift */,
 				4C2FA09220B017460084972C /* audioPlayer.swift */,
 				4C2FA08E20B00D250084972C /* Help.swift */,
-				4C2FA09020B00DB10084972C /* superBoy.swift */,
 				4CA1777F20AFD00300F13100 /* GameViewController.swift */,
-				4CA1778120AFD00300F13100 /* Main.storyboard */,
+				4C373B0C20B252AC0069FBC0 /* Main.storyboard */,
 				4CA1778420AFD00500F13100 /* Assets.xcassets */,
 				4CA1778620AFD00500F13100 /* LaunchScreen.storyboard */,
 				4CA1778920AFD00500F13100 /* Info.plist */,
@@ -217,119 +227,6 @@
 				4CA1779F20AFD00600F13100 /* Info.plist */,
 			);
 			path = mathAppUITests;
-			sourceTree = "<group>";
-		};
-		4CE06C4620B18319000E80C2 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		4CE06C4720B18325000E80C2 /* States */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = States;
-			sourceTree = "<group>";
-		};
-		4CE06C4820B18331000E80C2 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C5420B1846B000E80C2 /* SKTUtils */,
-				4CE06C5320B18457000E80C2 /* SG-Controllers */,
-				4CE06C5220B1843B000E80C2 /* SG-Engine */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		4CE06C4A20B1833F000E80C2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C4F20B18379000E80C2 /* Content */,
-				4CE06C4E20B1836C000E80C2 /* Artwork */,
-				4CE06C4D20B18366000E80C2 /* Sounds */,
-				4CE06C4C20B1835F000E80C2 /* Music */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4CE06C4B20B1834B000E80C2 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		4CE06C4C20B1835F000E80C2 /* Music */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Music;
-			sourceTree = "<group>";
-		};
-		4CE06C4D20B18366000E80C2 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
-		4CE06C4E20B1836C000E80C2 /* Artwork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Artwork;
-			sourceTree = "<group>";
-		};
-		4CE06C4F20B18379000E80C2 /* Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		4CE06C5220B1843B000E80C2 /* SG-Engine */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C5D20B1913C000E80C2 /* SGExtensions.swift */,
-				4CE06C5F20B19152000E80C2 /* SGResolution.swift */,
-				4CE06C5820B18E27000E80C2 /* SGSceneResponders */,
-				4CE06C5620B186C2000E80C2 /* SGScene.swift */,
-			);
-			path = "SG-Engine";
-			sourceTree = "<group>";
-		};
-		4CE06C5320B18457000E80C2 /* SG-Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C6120B193C5000E80C2 /* SGGameSettings.swift */,
-			);
-			path = "SG-Controllers";
-			sourceTree = "<group>";
-		};
-		4CE06C5420B1846B000E80C2 /* SKTUtils */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C5020B18429000E80C2 /* SKTUtils-master */,
-			);
-			path = SKTUtils;
-			sourceTree = "<group>";
-		};
-		4CE06C5520B184B5000E80C2 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		4CE06C5820B18E27000E80C2 /* SGSceneResponders */ = {
-			isa = PBXGroup;
-			children = (
-				4CE06C5920B18E65000E80C2 /* IOS_Responder.swift */,
-				4CE06C5B20B18E7C000E80C2 /* OSX_Responder.swift */,
-			);
-			path = SGSceneResponders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,17 +333,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C373B0220B2528D0069FBC0 /* Help.png in Resources */,
+				4C373B0620B2528D0069FBC0 /* High Score.png in Resources */,
+				4C373B0320B2528D0069FBC0 /* Settings.png in Resources */,
+				4C373B0720B2528D0069FBC0 /* How to.png in Resources */,
 				4C2FA07C20AFD6770084972C /* Help.png in Resources */,
+				4C373B0B20B2528D0069FBC0 /* superboy.png in Resources */,
 				4C2FA07D20AFD6770084972C /* Settings and High Score.png in Resources */,
 				4C2FA08220AFD6770084972C /* ethnocentric in Resources */,
+				4C373B0420B2528D0069FBC0 /* Story.png in Resources */,
+				4C373B0920B2528D0069FBC0 /* Settings and High Score.png in Resources */,
 				4C2FA08320AFD6770084972C /* Story.png in Resources */,
-				4CE06C5120B18429000E80C2 /* SKTUtils-master in Resources */,
+				4C373B0D20B252AC0069FBC0 /* Main.storyboard in Resources */,
+				4C373B0120B2528D0069FBC0 /* halfearth.jpg in Resources */,
 				4C2FA09720B019710084972C /* success.wav in Resources */,
 				4C2FA09920B019710084972C /* bg.mp3 in Resources */,
 				4C2FA08620AFDA660084972C /* superboy.png in Resources */,
 				4C2FA08C20AFE8BA0084972C /* Stars.sks in Resources */,
+				4C373B0820B2528D0069FBC0 /* pug right.png in Resources */,
 				4C2FA08D20AFE8BA0084972C /* Assets.xcassets in Resources */,
-				4CA1778320AFD00300F13100 /* Main.storyboard in Resources */,
+				4C373B0A20B2528D0069FBC0 /* Main Menu.png in Resources */,
+				4C373B0520B2528D0069FBC0 /* pug left.gif in Resources */,
 				4C2FA08720AFDA660084972C /* pug.png in Resources */,
 				4C2FA07F20AFD6770084972C /* How to.png in Resources */,
 				4C2FA08120AFD6770084972C /* Settings.png in Resources */,
@@ -481,19 +388,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE06C5720B186C2000E80C2 /* SGScene.swift in Sources */,
 				4CA1777E20AFD00300F13100 /* GameScene.swift in Sources */,
 				4CA1778020AFD00300F13100 /* GameViewController.swift in Sources */,
-				4CE06C6020B19152000E80C2 /* SGResolution.swift in Sources */,
-				4CE06C5A20B18E65000E80C2 /* IOS_Responder.swift in Sources */,
-				4C2FA09120B00DB10084972C /* superBoy.swift in Sources */,
 				4C2FA09B20B019E70084972C /* mainMenu.swift in Sources */,
 				4C2FA09320B017460084972C /* audioPlayer.swift in Sources */,
-				4CE06C5C20B18E7C000E80C2 /* OSX_Responder.swift in Sources */,
-				4CE06C5E20B1913C000E80C2 /* SGExtensions.swift in Sources */,
 				4C2FA08F20B00D250084972C /* Help.swift in Sources */,
 				4CA1777820AFD00300F13100 /* AppDelegate.swift in Sources */,
-				4CE06C6220B193C5000E80C2 /* SGGameSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,14 +429,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CA1778120AFD00300F13100 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CA1778220AFD00300F13100 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CA1778620AFD00500F13100 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

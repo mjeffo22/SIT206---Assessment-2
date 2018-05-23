@@ -20,7 +20,7 @@ class SubtractionViewController: UIViewController {
     var scoreVSub = Int()
     
     
-    // Outlets
+    // Outlets - for all on screen objects
     
     @IBOutlet weak var healthSub: UITextField!
     @IBOutlet weak var roundSub: UITextField!
@@ -49,6 +49,7 @@ class SubtractionViewController: UIViewController {
     
     // Action
     
+    // Next Question Number 1
     @IBAction func next1Sub(_ sender: Any) {
         
         cross1Sub.isHidden = true
@@ -67,11 +68,13 @@ class SubtractionViewController: UIViewController {
         alien8.isHidden = false
         alien9.isHidden = true
         next1Sub.isHidden = true
-        quitSub.isHidden = false
+        //quitSub.isHidden = false
         quesSub.text = " 9 - 1  = _"
         roundSub.text = " ROUND: 2/3"
     }
     
+    // Next Question Number 2
+
     @IBAction func next2Sub(_ sender: Any) {
         cross1Sub.isHidden = true
         cross2Sub.isHidden = true
@@ -89,22 +92,19 @@ class SubtractionViewController: UIViewController {
         alien8.isHidden = true
         alien9.isHidden = false
         next2Sub.isHidden = true
-        quitSub.isHidden = false
+        //quitSub.isHidden = false
         quesSub.text = " 9 - 6  = _"
         roundSub.text = " ROUND: 3/3"
     }
+    
+    // Next Ques 3 (left blank at this point)
     @IBAction func next3Sub(_ sender: Any) {
         
     }
     
-    @IBAction func quitsub(_ sender: Any) {
-        audioPlayer.stop()
-    }
-    
-    
-    
-    
+    // Alien 1 Code - Health + Score
     @IBAction func alien1(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
         alien1.isHidden = true
         cross1Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(-50)
@@ -113,7 +113,9 @@ class SubtractionViewController: UIViewController {
         healthSub.text = " HEALTH: \(healthVSub)"
     }
     
+    // Alien 2 Code - Health + Score
     @IBAction func alien2(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
         alien2.isHidden = true
         cross1Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(-50)
@@ -122,38 +124,37 @@ class SubtractionViewController: UIViewController {
         healthSub.text = " HEALTH: \(healthVSub)"
     }
     
+    // Alien 3 Code - Health + Score
     @IBAction func alien3(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
         alien3.isHidden = true
         tick1Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(+100)
         scoreSub.text = " SCORE: \(scoreVSub)"
         next3Sub.isHidden = false
-        quitSub.isHidden = true
+        //quitSub.isHidden = true
         alien6.isHidden = true
         alien9.isHidden = true
     }
     
+    // Alien 4 Code - Health + Score
     @IBAction func alien4(_ sender: Any) {
+       // Code for incorrect anwer (score + health + x)
         alien4.isHidden = true
         tick2Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(+100)
         scoreSub.text = " SCORE: \(scoreVSub)"
         next1Sub.isHidden = false
-        quitSub.isHidden = true
+        //quitSub.isHidden = true
         alien1.isHidden = true
         alien7.isHidden = true
         
     }
     
+    // Alien 5 Code - Health + Score
     @IBAction func alien5(_ sender: Any) {
-        alien5.isHidden = true
-        cross2Sub.isHidden = false
-        scoreVSub = Int(scoreVSub) + Int(-50)
-        scoreSub.text = " SCORE: \(scoreVSub)"
-        healthVSub = Int(healthVSub) + Int(-20)
-        healthSub.text = " HEALTH: \(healthVSub)"
-    }
-    @IBAction func alien6(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
+
         alien5.isHidden = true
         cross2Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(-50)
@@ -162,7 +163,20 @@ class SubtractionViewController: UIViewController {
         healthSub.text = " HEALTH: \(healthVSub)"
     }
     
+    // Alien 6 Code - Health + Score
+    @IBAction func alien6(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
+        alien5.isHidden = true
+        cross2Sub.isHidden = false
+        scoreVSub = Int(scoreVSub) + Int(-50)
+        scoreSub.text = " SCORE: \(scoreVSub)"
+        healthVSub = Int(healthVSub) + Int(-20)
+        healthSub.text = " HEALTH: \(healthVSub)"
+    }
+    
+    // Alien 7 Code - Health + Score
     @IBAction func alien7(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
         alien7.isHidden = true
         cross3Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(-50)
@@ -170,17 +184,22 @@ class SubtractionViewController: UIViewController {
         healthVSub = Int(healthVSub) + Int(-20)
         healthSub.text = " HEALTH: \(healthVSub)"
     }
+   
+    // Alien 8 Code - Health + Score
     @IBAction func alien8(_ sender: Any) {
         alien8.isHidden = true
         tick3Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(+100)
         scoreSub.text = " SCORE: \(scoreVSub)"
         next2Sub.isHidden = false
-        quitSub.isHidden = true
+        //quitSub.isHidden = true
         alien2.isHidden = true
         alien5.isHidden = true
     }
+    
+    // Alien 9 Code - Health + Score
     @IBAction func alien9(_ sender: Any) {
+        // Code for incorrect anwer (score + health + x)
         alien9.isHidden = true
         cross3Sub.isHidden = false
         scoreVSub = Int(scoreVSub) + Int(-50)

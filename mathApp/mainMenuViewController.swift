@@ -11,9 +11,12 @@ import AVFoundation
 
 class mainMenuViewController: UIViewController {
 
+    
+    // Variable
+    
     var audioPlayer = AVAudioPlayer()
     
-    
+    // Turn on music when story scene is initiated
     @IBAction func story(_ sender: Any) {
     audioPlayer.play()
     }
@@ -22,7 +25,7 @@ class mainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Try / Catch for Audio Player
         do{
             audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:Bundle.main.path(forResource: "bg", ofType: "mp3")!))
             audioPlayer.prepareToPlay()
@@ -37,16 +40,5 @@ class mainMenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

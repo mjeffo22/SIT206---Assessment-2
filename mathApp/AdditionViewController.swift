@@ -26,7 +26,7 @@ class AdditionViewController: UIViewController {
     var myInt = Int()
     
     
-    // Outlets
+    // Outlets - For all on screen items
     
     @IBOutlet weak var healthAdd: UITextField!
     @IBOutlet weak var roundAdd: UITextField!
@@ -55,6 +55,7 @@ class AdditionViewController: UIViewController {
     
     // Action
     
+    // Next Question Number 1
     @IBAction func next1Add(_ sender: Any) {
         
         cross1Add.isHidden = true
@@ -77,7 +78,8 @@ class AdditionViewController: UIViewController {
         quesAdd.text = " 3 + 5 = _"
         roundAdd.text = " ROUND: 2/3"
     }
-    
+   
+    // Next Qusiton Number 2
     @IBAction func next2Add(_ sender: Any) {
         cross1Add.isHidden = true
         cross2Add.isHidden = true
@@ -101,9 +103,9 @@ class AdditionViewController: UIViewController {
     }
     
     
-    
+    // Alien 1 Code - Health + Score
     @IBAction func alien1(_ sender: Any) {
-        
+        // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -116,7 +118,7 @@ class AdditionViewController: UIViewController {
             print("noHealth")
             
         }  else {
-        
+        // Code for incorrect anwer (score + health + x)
         alien1.isHidden = true
         cross1Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -126,9 +128,10 @@ class AdditionViewController: UIViewController {
     }
     
 }
-    
+    // Alien 2 Code - Health + Score
     @IBAction func alien2(_ sender: Any) {
        
+        // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -142,7 +145,7 @@ class AdditionViewController: UIViewController {
             
             
         }  else {
-        
+        // Code for incorrect anwer (score + health + x)
         alien2.isHidden = true
         cross1Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -152,8 +155,9 @@ class AdditionViewController: UIViewController {
     }
     
 }
-    
+    // Alien 3 Code - Health + Score
     @IBAction func alien3(_ sender: Any) {
+        // Code for correct anwer (score + health + tick)
         alien3.isHidden = true
         tick1Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(+100)
@@ -164,7 +168,9 @@ class AdditionViewController: UIViewController {
         alien9.isHidden = true
     }
     
+    // Alien 4 Code - Health + Score
     @IBAction func alien4(_ sender: Any) {
+        // Code for correct anwer (score + health + tick)
         alien4.isHidden = true
         tick2Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(+100)
@@ -176,8 +182,9 @@ class AdditionViewController: UIViewController {
         
     }
     
+    // Alien 4 Code - Health + Score
     @IBAction func alien5(_ sender: Any) {
-        
+        // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -190,7 +197,7 @@ class AdditionViewController: UIViewController {
             print("noHealth")
             
         }  else {
-        
+        // Code for incorrect anwer (score + health + x)
         alien5.isHidden = true
         cross2Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -200,8 +207,9 @@ class AdditionViewController: UIViewController {
     }
     
 }
+    // Alien 6 Code - Health + Score
     @IBAction func alien6(_ sender: Any) {
-        
+        // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -213,7 +221,7 @@ class AdditionViewController: UIViewController {
             print("noHealth")
             
         }  else {
-        
+        // Code for incorrect anwer (score + health + x)
         alien6.isHidden = true
         cross2Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -224,8 +232,9 @@ class AdditionViewController: UIViewController {
         
 }
     
+    // Alien 7 Code - Health + Score
     @IBAction func alien7(_ sender: Any) {
-       
+       // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -238,7 +247,7 @@ class AdditionViewController: UIViewController {
             print("noHealth")
             
             }  else {
-            
+            // Code for incorrect anwer (score + health + x)
             alien7.isHidden = true
             cross3Add.isHidden = false
             scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -250,7 +259,10 @@ class AdditionViewController: UIViewController {
         
         
     }
+    
+    // Alien 8 Code - Health + Score
     @IBAction func alien8(_ sender: Any) {
+       // Code for correct anwer (score + health + tick)
         alien8.isHidden = true
         tick3Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(+100)
@@ -260,7 +272,10 @@ class AdditionViewController: UIViewController {
         alien2.isHidden = true
         alien5.isHidden = true
     }
+    
+    // Alien 9 Code - Health + Score
     @IBAction func alien9(_ sender: Any) {
+        // Checks for player health, if 0 = out of health, else continue
         if healthVAdd == 0 {
             health = false
         }
@@ -273,7 +288,7 @@ class AdditionViewController: UIViewController {
             print("noHealth")
             
         }  else {
-        
+        // Code for incorrect anwer (score + health + x)
         alien9.isHidden = true
         cross3Add.isHidden = false
         scoreVAdd = Int(scoreVAdd) + Int(-50)
@@ -285,7 +300,7 @@ class AdditionViewController: UIViewController {
 }
     
     
- 
+    // Stop background music if player quits game
     @IBAction func quitAdd(_ sender: Any) {
         audioPlayer.stop()
     }

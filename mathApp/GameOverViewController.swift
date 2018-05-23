@@ -13,17 +13,20 @@ class GameOverViewController: UIViewController {
 
     //var intPassed = Int()
     
+    // Outlets
+    
     @IBOutlet weak var secondLabel: UILabel!
     
     var audioPlayer = AVAudioPlayer()
     
+    // Stop music when gamehas finished and player is returning to menu system
     @IBAction func main(_ sender: Any) {
         audioPlayer.stop()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    // Try Catch for Audio Player
         do{
             audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:Bundle.main.path(forResource: "bg", ofType: "mp3")!))
             audioPlayer.prepareToPlay()
@@ -43,14 +46,5 @@ class GameOverViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

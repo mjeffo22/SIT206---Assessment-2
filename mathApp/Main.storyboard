@@ -60,22 +60,31 @@
                                 <rect key="frame" x="196" y="308" width="275" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Main Menu.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Zjj-se-UKp"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-FV-3P9">
                                 <rect key="frame" x="20" y="159" width="275" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-KC-9Dg">
-                                <rect key="frame" x="356" y="92" width="275" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-Vu-Bkz">
                                 <rect key="frame" x="20" y="248" width="275" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mat-jm-U91">
+                                <rect key="frame" x="356" y="113" width="275" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="HEALTH BOOST" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mv-qN-KD0">
+                                <rect key="frame" x="356" y="202" width="275" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="THE ELIMINATOR" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oQa-9w-GSB"/>
@@ -88,7 +97,7 @@
         <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main Menu" id="BYZ-38-t0r" customClass="MainViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Menu" id="BYZ-38-t0r" customClass="mainMenuViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +119,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Story.png"/>
                                 <connections>
+                                    <action selector="story:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayL-1g-8au"/>
                                     <segue destination="xph-hA-db3" kind="show" id="vsM-ql-K90"/>
                                 </connections>
                             </button>
@@ -161,15 +171,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tnC-Ps-agL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35.532233883058474" y="32.799999999999997"/>
+            <point key="canvasLocation" x="826.23688155922048" y="32.799999999999997"/>
         </scene>
-        <!--Addition Q1-->
+        <!--Addition-->
         <scene sceneID="ZW9-Oh-I2J">
             <objects>
-                <viewController title="Addition Q1" id="CWo-Pz-t2Y" customClass="AdditionQ1ViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Addition" id="CWo-Pz-t2Y" customClass="AdditionViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lpc-hk-Ysx">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,22 +189,46 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" HEALTH:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="W8R-Sx-Hui">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLv-FO-dSa">
+                                <rect key="frame" x="283" y="182" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien4.png"/>
+                                <connections>
+                                    <action selector="alien4:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="kbr-rb-7bG"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7o-9R-Mzd">
+                                <rect key="frame" x="321" y="182" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien5.png"/>
+                                <connections>
+                                    <action selector="alien5:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="7Y1-1M-U0b"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUs-ks-2fL">
+                                <rect key="frame" x="353" y="182" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien6.png"/>
+                                <connections>
+                                    <action selector="alien6:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="je0-Bx-MtG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" HEALTH: 100" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="W8R-Sx-Hui">
+                                <rect key="frame" x="251" y="45" width="164" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="307-lR-nbG">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/3" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="307-lR-nbG">
+                                <rect key="frame" x="21" y="45" width="164" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-3Y-5rF">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE: 0" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-3Y-5rF">
+                                <rect key="frame" x="483" y="45" width="164" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
@@ -206,7 +241,7 @@
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="5 + 3 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="ee4-Mh-Mqy">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="1 + 3 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="ee4-Mh-Mqy">
                                 <rect key="frame" x="251" y="322" width="164" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -221,31 +256,56 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="aEo-CQ-xI6"/>
+                                    <action selector="quitAdd:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="Xa9-yH-2CC"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="mdW-bJ-RvC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTs-Yv-7LJ">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
+                                <rect key="frame" x="123" y="84" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien1.png"/>
+                                <connections>
+                                    <action selector="alien1:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="CWn-3y-T2C"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KD-X1-BmS">
+                                <rect key="frame" x="193" y="84" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien3.png"/>
+                                <connections>
+                                    <action selector="alien3:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="m4Y-M4-zZS"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJh-ne-ULQ">
+                                <rect key="frame" x="163" y="84" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="alien2.png"/>
                                 <connections>
-                                    <action selector="incorrectQ1add:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="sDo-Eq-rrJ"/>
+                                    <action selector="alien2:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="630-Ir-bdL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-Ch-Avk">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-Ch-Avk">
+                                <rect key="frame" x="430" y="84" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="alien8.png"/>
                                 <connections>
-                                    <action selector="correctQ1:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="NjL-T3-mbY"/>
+                                    <action selector="alien8:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="Iay-rH-ScI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpO-Z4-IT9">
-                                <rect key="frame" x="302" y="185" width="62" height="87"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-nl-t64">
+                                <rect key="frame" x="391" y="84" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien5.png"/>
+                                <state key="normal" image="alien7.png"/>
                                 <connections>
-                                    <action selector="incorrectQ1add:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="8fp-OS-TfN"/>
+                                    <action selector="alien7:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="vMj-se-TLG"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVt-j4-NKX">
+                                <rect key="frame" x="475" y="84" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien9.png"/>
+                                <connections>
+                                    <action selector="alien9:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="tWK-XE-YsD"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uc-M1-h1T">
@@ -257,123 +317,12 @@
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="X1x-ly-j7G" kind="show" id="AXs-by-CXs"/>
+                                    <action selector="next3Add:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="EaK-yd-SLQ"/>
+                                    <segue destination="MqI-bb-ij9" kind="show" id="gQn-E0-K26"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4K-r1-8GB">
-                                <rect key="frame" x="251" y="94" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoj-qC-4wx">
-                                <rect key="frame" x="267" y="56" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-20" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-gs-o8o">
-                                <rect key="frame" x="356" y="94" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YYA-qj-vFT"/>
-                    </view>
-                    <connections>
-                        <outlet property="correctQ1add" destination="xoj-qC-4wx" id="NEQ-00-7zS"/>
-                        <outlet property="damageQ1add" destination="cNl-gs-o8o" id="bBK-ve-Nnk"/>
-                        <outlet property="healthQ1add" destination="xoj-qC-4wx" id="RjQ-QF-eKd"/>
-                        <outlet property="incorrectQ1add" destination="Z4K-r1-8GB" id="cO6-rX-oLZ"/>
-                        <outlet property="nextQ1add" destination="9Uc-M1-h1T" id="FDc-J7-Dzz"/>
-                        <outlet property="quitQ1add" destination="GbS-br-u7n" id="T4s-pt-ZC6"/>
-                        <outlet property="scoreQ1add" destination="3hx-3Y-5rF" id="8uC-Yl-HnP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="56u-XI-5C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2022.6386806596704" y="-1847.2"/>
-        </scene>
-        <!--Addition Q2-->
-        <scene sceneID="7T0-gw-YOq">
-            <objects>
-                <viewController title="Addition Q2" id="X1x-ly-j7G" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PKi-CP-1dw">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="halfearth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-Y7-dzn">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 1/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="xne-8a-a5Y">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-ue-ocY">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KaZ-pq-b0h">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-G3-Sns">
-                                <rect key="frame" x="21" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="5 + _ = 6" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="igK-Yb-E2h">
-                                <rect key="frame" x="251" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1F-2C-jXC">
-                                <rect key="frame" x="483" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7iP-aU-uHo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyR-mo-xoi">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien2.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lB-yH-Jgp">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien6.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duU-fG-Zf9">
-                                <rect key="frame" x="302" y="183" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien1.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huY-mK-o2P">
-                                <rect key="frame" x="483" y="322" width="164" height="32"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeK-93-6Tb">
+                                <rect key="frame" x="483" y="317" width="164" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
@@ -381,22 +330,92 @@
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Q5m-kZ-TOh" kind="show" id="ihm-La-7Ar"/>
+                                    <action selector="next2Add:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="UC6-qw-DJG"/>
                                 </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geL-wY-GJq">
+                                <rect key="frame" x="483" y="317" width="164" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
+                                <state key="normal" title="NEXT ROUND">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="next1Add:" destination="CWo-Pz-t2Y" eventType="touchUpInside" id="2ER-gj-g00"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="cJ1-ar-Zhq">
+                                <rect key="frame" x="239" y="192" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-MR-Z96">
+                                <rect key="frame" x="100" y="89" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="gum-cA-iEw">
+                                <rect key="frame" x="367" y="89" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="dN7-nf-PmG">
+                                <rect key="frame" x="367" y="84" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-p6-G5U">
+                                <rect key="frame" x="100" y="84" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="J8l-eP-hqo">
+                                <rect key="frame" x="239" y="192" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-4w-SCQ">
+                                <rect key="frame" x="296" y="84" width="76" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="2"/>
+                                <state key="normal" title="BUTTON">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="QOI-s9-4lv"/>
+                        <viewLayoutGuide key="safeArea" id="YYA-qj-vFT"/>
                     </view>
+                    <connections>
+                        <outlet property="alien1" destination="fTs-Yv-7LJ" id="FTD-b6-hHX"/>
+                        <outlet property="alien2" destination="YJh-ne-ULQ" id="Ozs-o1-vNF"/>
+                        <outlet property="alien3" destination="8KD-X1-BmS" id="3qb-81-4dv"/>
+                        <outlet property="alien4" destination="gLv-FO-dSa" id="b0F-AU-tUH"/>
+                        <outlet property="alien5" destination="T7o-9R-Mzd" id="B9n-ax-dHc"/>
+                        <outlet property="alien6" destination="UUs-ks-2fL" id="QLE-UG-h5Y"/>
+                        <outlet property="alien7" destination="hvB-nl-t64" id="gDL-KR-GMm"/>
+                        <outlet property="alien8" destination="hz8-Ch-Avk" id="fzL-r0-p8W"/>
+                        <outlet property="alien9" destination="JVt-j4-NKX" id="vKL-16-VXx"/>
+                        <outlet property="button" destination="YXi-4w-SCQ" id="q1w-SC-FaS"/>
+                        <outlet property="cross1Add" destination="eCe-MR-Z96" id="z6h-9B-JQb"/>
+                        <outlet property="cross2Add" destination="cJ1-ar-Zhq" id="3ux-Iu-Sub"/>
+                        <outlet property="cross3Add" destination="gum-cA-iEw" id="n2N-Yc-0PE"/>
+                        <outlet property="healthAdd" destination="W8R-Sx-Hui" id="dKR-qs-Ijc"/>
+                        <outlet property="next1Add" destination="geL-wY-GJq" id="Gdi-vh-WuF"/>
+                        <outlet property="next2Add" destination="KeK-93-6Tb" id="vrK-3d-IdR"/>
+                        <outlet property="next3Add" destination="9Uc-M1-h1T" id="StR-LE-Dbi"/>
+                        <outlet property="quesAdd" destination="ee4-Mh-Mqy" id="Ymy-de-cNd"/>
+                        <outlet property="quitAdd" destination="GbS-br-u7n" id="KES-nF-oet"/>
+                        <outlet property="roundAdd" destination="307-lR-nbG" id="OMo-Zj-0Wd"/>
+                        <outlet property="scoreAdd" destination="3hx-3Y-5rF" id="M5K-WT-wxg"/>
+                        <outlet property="tick1Add" destination="Tcm-p6-G5U" id="feQ-Kq-N7l"/>
+                        <outlet property="tick2Add" destination="J8l-eP-hqo" id="K5t-yv-b02"/>
+                        <outlet property="tick3Add" destination="dN7-nf-PmG" id="uxD-sh-M5u"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="olD-yj-05T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56u-XI-5C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2807" y="-1847"/>
+            <point key="canvasLocation" x="2590.2548725637184" y="-511.19999999999999"/>
         </scene>
-        <!--Game Over Addition-->
+        <!--Game Over-->
         <scene sceneID="VKN-ER-8da">
             <objects>
-                <viewController title="Game Over Addition" id="MqI-bb-ij9" sceneMemberID="viewController">
+                <viewController title="Game Over" id="MqI-bb-ij9" customClass="GameOverViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AJc-qZ-Cf6">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,8 +428,22 @@
                                 <rect key="frame" x="243" y="20" width="404" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" HEALTH: 100" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="vvc-VL-M72">
+                                <rect key="frame" x="451" y="119" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE: 0" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-l8-7dv">
+                                <rect key="frame" x="267" y="119" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHp-7b-7al">
-                                <rect key="frame" x="263" y="39" width="358" height="44"/>
+                                <rect key="frame" x="266" y="47" width="358" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
@@ -418,15 +451,15 @@
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oem-ZN-zMr">
-                                <rect key="frame" x="263" y="293" width="358" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHI-ub-lt5">
+                                <rect key="frame" x="451" y="293" width="192" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="MAIN MENU" backgroundImage="Empty.png">
+                                <state key="normal" title="PLAY AGAIN" backgroundImage="Empty.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="DVL-rj-QYJ"/>
+                                    <segue destination="xph-hA-db3" kind="show" id="qQ0-sd-81X"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pugFly.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uZX-4J-hpQ">
@@ -437,19 +470,39 @@
                                 <rect key="frame" x="20" y="39" width="215" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oem-ZN-zMr">
+                                <rect key="frame" x="253" y="293" width="192" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="MAIN MENU" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="main:" destination="MqI-bb-ij9" eventType="touchUpInside" id="MMs-IM-gmd"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="vXE-3u-Ryl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONGRATULATIONS!! YOU HAVE SAVED THE WORLD TRY TO BEAT YOUR SCORE NEXT TIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-k1-ubq">
+                                <rect key="frame" x="267" y="151" width="348" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lzz-hv-xnu"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qze-jO-C3K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKU-dT-gfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3787.5562218890559" y="-1351.2"/>
+            <point key="canvasLocation" x="4121.2893553223394" y="-511.19999999999999"/>
         </scene>
-        <!--Subtraction Q1-->
+        <!--Subtraction-->
         <scene sceneID="fyu-A6-6Vo">
             <objects>
-                <viewController title="Subtraction Q1" id="RiT-Su-eUh" sceneMemberID="viewController">
+                <viewController title="Subtraction" id="RiT-Su-eUh" customClass="SubtractionViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MK3-RT-hKe">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,66 +511,152 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 0/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-v6-O9A">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="XPH-hP-n9X">
+                                <rect key="frame" x="58" y="71" width="188" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sbh-aJ-1H1">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="kHY-hl-a15">
+                                <rect key="frame" x="240" y="198" width="188" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="gXO-va-gpW">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="MyK-xM-7to">
+                                <rect key="frame" x="66" y="76" width="188" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHO-OT-xfX">
-                                <rect key="frame" x="21" y="322" width="164" height="27"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWM-vt-Zrt">
+                                <rect key="frame" x="177" y="66" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="5 - 3 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Gw-P6-EIE">
-                                <rect key="frame" x="251" y="322" width="164" height="27"/>
+                                <state key="normal" image="alien3.png"/>
+                                <connections>
+                                    <action selector="alien3:" destination="RiT-Su-eUh" eventType="touchUpInside" id="wv9-6q-jut"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIM-y2-FWQ">
+                                <rect key="frame" x="342" y="193" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKG-7X-SQK">
-                                <rect key="frame" x="483" y="322" width="164" height="27"/>
+                                <state key="normal" image="alien6.png"/>
+                                <connections>
+                                    <action selector="alien6:" destination="RiT-Su-eUh" eventType="touchUpInside" id="8SJ-N6-Nt4"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZa-SL-bEA">
+                                <rect key="frame" x="490" y="59" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien8.png"/>
+                                <connections>
+                                    <action selector="alien8:" destination="RiT-Su-eUh" eventType="touchUpInside" id="hq5-N3-2sr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONc-J2-A6K">
+                                <rect key="frame" x="472" y="328" width="164" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <state key="normal" title="QUIT" backgroundImage="shm.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="quitsub:" destination="RiT-Su-eUh" eventType="touchUpInside" id="axx-Vz-MC0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9BG-3x-Myg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SW-qP-A0e">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien8.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xi-P8-bXQ">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien3.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twb-oI-JzX">
-                                <rect key="frame" x="264" y="188" width="62" height="87"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th5-1A-qrz">
+                                <rect key="frame" x="129" y="66" width="62" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="alien2.png"/>
+                                <connections>
+                                    <action selector="alien2:" destination="RiT-Su-eUh" eventType="touchUpInside" id="lTl-g3-gGg"/>
+                                </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODs-Wi-MqB">
-                                <rect key="frame" x="483" y="317" width="164" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTG-q5-2gv">
+                                <rect key="frame" x="250" y="188" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien4.png"/>
+                                <connections>
+                                    <action selector="alien4:" destination="RiT-Su-eUh" eventType="touchUpInside" id="oAs-3y-Gsz"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL0-eo-EeY">
+                                <rect key="frame" x="284" y="188" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien5.png"/>
+                                <connections>
+                                    <action selector="alien5:" destination="RiT-Su-eUh" eventType="touchUpInside" id="pS1-HS-UVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVy-v2-Umz">
+                                <rect key="frame" x="444" y="66" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien7.png"/>
+                                <connections>
+                                    <action selector="alien7:" destination="RiT-Su-eUh" eventType="touchUpInside" id="0jB-me-CYU"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="OxJ-ff-AtE">
+                                <rect key="frame" x="420" y="64" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="JjT-aJ-hCC">
+                                <rect key="frame" x="427" y="69" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-Bg-UsU">
+                                <rect key="frame" x="87" y="66" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien1.png"/>
+                                <connections>
+                                    <action selector="alien1:" destination="RiT-Su-eUh" eventType="touchUpInside" id="Zle-M3-8id"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross.png" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-lZ-91K">
+                                <rect key="frame" x="233" y="198" width="188" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-7I-vLo">
+                                <rect key="frame" x="529" y="59" width="62" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alien9.png"/>
+                                <connections>
+                                    <action selector="alien9:" destination="RiT-Su-eUh" eventType="touchUpInside" id="Kug-em-dv3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfD-s0-uDQ">
+                                <rect key="frame" x="262" y="66" width="142" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="2"/>
+                                <state key="normal" title="BUTTON">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/3" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="AmK-df-glb">
+                                <rect key="frame" x="10" y="37" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE: 0" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYI-cl-cVH">
+                                <rect key="frame" x="472" y="37" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="nDF-b0-hEz">
+                                <rect key="frame" x="10" y="328" width="164" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="6 - 2 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-2C-PlK">
+                                <rect key="frame" x="252" y="328" width="164" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-pR-jd5">
+                                <rect key="frame" x="472" y="323" width="164" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
@@ -525,113 +664,78 @@
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="T3o-NL-jzV" kind="show" id="5BU-LA-Tcr"/>
+                                    <action selector="next1Sub:" destination="RiT-Su-eUh" eventType="touchUpInside" id="OuK-2I-Sjg"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-K2-YHc">
+                                <rect key="frame" x="472" y="323" width="164" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
+                                <state key="normal" title="NEXT ROUND">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="next3Sub:" destination="RiT-Su-eUh" eventType="touchUpInside" id="uKj-zZ-LYy"/>
+                                    <segue destination="MqI-bb-ij9" kind="show" id="VYa-BF-eTK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" HEALTH: 100" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="dxW-iE-Dy0">
+                                <rect key="frame" x="245" y="37" width="164" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATZ-Ss-WTq">
+                                <rect key="frame" x="472" y="323" width="164" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
+                                <state key="normal" title="NEXT ROUND">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="next2Sub:" destination="RiT-Su-eUh" eventType="touchUpInside" id="VuP-ND-cLG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l1D-ut-0TL"/>
                     </view>
+                    <connections>
+                        <outlet property="alien1" destination="fYP-Bg-UsU" id="p6K-TZ-FGL"/>
+                        <outlet property="alien2" destination="th5-1A-qrz" id="CRk-3P-dgn"/>
+                        <outlet property="alien3" destination="vWM-vt-Zrt" id="3BQ-QH-f2U"/>
+                        <outlet property="alien4" destination="CTG-q5-2gv" id="sOJ-yU-5LV"/>
+                        <outlet property="alien5" destination="nL0-eo-EeY" id="tQy-CK-lZm"/>
+                        <outlet property="alien6" destination="WIM-y2-FWQ" id="2ti-Jv-Chu"/>
+                        <outlet property="alien7" destination="tVy-v2-Umz" id="nIz-g0-6uC"/>
+                        <outlet property="alien8" destination="yZa-SL-bEA" id="Th5-G7-WOe"/>
+                        <outlet property="alien9" destination="LM9-7I-vLo" id="Yc1-f4-eHU"/>
+                        <outlet property="cross1Sub" destination="XPH-hP-n9X" id="Q1p-kE-21h"/>
+                        <outlet property="cross2Sub" destination="q8f-lZ-91K" id="V1J-sM-6WU"/>
+                        <outlet property="cross3Sub" destination="OxJ-ff-AtE" id="MZZ-Sz-nfT"/>
+                        <outlet property="healthSub" destination="dxW-iE-Dy0" id="nwu-fx-Ad5"/>
+                        <outlet property="next1Sub" destination="KZ9-pR-jd5" id="ht6-xe-O2l"/>
+                        <outlet property="next2Sub" destination="ATZ-Ss-WTq" id="S0h-Y9-IWg"/>
+                        <outlet property="next3Sub" destination="bsS-K2-YHc" id="caC-01-0HH"/>
+                        <outlet property="quesSub" destination="4g8-2C-PlK" id="nN0-4u-p8S"/>
+                        <outlet property="roundSub" destination="AmK-df-glb" id="RdX-Hm-7Og"/>
+                        <outlet property="scoreSub" destination="qYI-cl-cVH" id="1dt-UE-Kw5"/>
+                        <outlet property="tick1Sub" destination="MyK-xM-7to" id="1oZ-at-qmD"/>
+                        <outlet property="tick2Sub" destination="kHY-hl-a15" id="2M3-vH-W1D"/>
+                        <outlet property="tick3Sub" destination="JjT-aJ-hCC" id="ieW-Io-wZI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KhI-06-ugO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="519"/>
+            <point key="canvasLocation" x="2590.2548725637184" y="301.60000000000002"/>
         </scene>
-        <!--Subtraction Q3-->
-        <scene sceneID="3Sb-Vr-22e">
-            <objects>
-                <viewController title="Subtraction Q3" id="I73-Eq-BfX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1HR-ML-LW9">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-mm-rNA">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 0/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-fy-oB7">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="D2g-Vk-qE2">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="YR2-x2-IZA">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-gD-Ft1">
-                                <rect key="frame" x="21" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="9 - _ = 4" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-b1-Tbo">
-                                <rect key="frame" x="251" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBd-bb-Zru">
-                                <rect key="frame" x="483" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-sr-Lxd">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien6.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pww-5h-lhg">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien5.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiA-AE-bjn">
-                                <rect key="frame" x="264" y="188" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien4.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLg-3k-Bov">
-                                <rect key="frame" x="483" y="317" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
-                                <state key="normal" title="NEXT ROUND">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wz6-Kk-6JF" kind="show" id="VgG-dh-R7M"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5RL-iK-aKf"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xWp-oV-VD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1939.8800599700151" y="1512.8"/>
-        </scene>
-        <!--Game Over Subtraction-->
+        <!--Out of Health-->
         <scene sceneID="hAh-9d-LF1">
             <objects>
-                <viewController title="Game Over Subtraction" id="dIU-Ra-W5n" sceneMemberID="viewController">
+                <viewController title="Out of Health" id="dIU-Ra-W5n" customClass="NoHealthViewController" customModule="mathApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mE4-pk-K3U">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,11 +744,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sbFly.gif" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Pb-C9w">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sbHurt.gif" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Pb-C9w">
                                 <rect key="frame" x="37" y="48" width="215" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pugFly.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uc9-AT-F7f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pugHurt.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uc9-AT-F7f">
                                 <rect key="frame" x="37" y="221" width="215" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -657,302 +761,48 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="GAME OVER!">
+                                <state key="normal" title="OUT OF HEALTH ">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pu-xi-cPo">
-                                <rect key="frame" x="274" y="284" width="358" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pec-fE-NFh">
+                                <rect key="frame" x="270" y="294" width="174" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                                 <state key="normal" title="MAIN MENU" backgroundImage="Empty.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="YqD-wY-3sl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Wjd-f4-X4P"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBt-sF-lr5">
+                                <rect key="frame" x="470" y="294" width="177" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
+                                <state key="normal" title="PLAY AGAIN" backgroundImage="Empty.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xph-hA-db3" kind="show" id="6mr-9Y-n71"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU RAN OUT OF HELATH  GIVE IT ANOTHER GO  THE EARTH NEEDS YOUR HELP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2X-Ph-mrn">
+                                <rect key="frame" x="288" y="124" width="339" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zfK-ff-oDa"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gQm-Sg-xCU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xQ-ZF-VEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3787.5562218890559" y="688.79999999999995"/>
-        </scene>
-        <!--Subtraction Q2-->
-        <scene sceneID="p2b-e3-Ndc">
-            <objects>
-                <viewController title="Subtraction Q2" id="T3o-NL-jzV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qFJ-UA-SQP">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IE7-UY-k2q">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 0/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-IW-hhj">
-                                <rect key="frame" x="258" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KDa-f0-8I5">
-                                <rect key="frame" x="28" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ns8-il-W7T">
-                                <rect key="frame" x="490" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="dC3-K0-APp">
-                                <rect key="frame" x="28" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="6 - 1 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-LM-SlZ">
-                                <rect key="frame" x="258" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUP-VT-10F">
-                                <rect key="frame" x="490" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-eL-P94">
-                                <rect key="frame" x="165" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien5.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfk-hI-XPD">
-                                <rect key="frame" x="490" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien2.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-Ah-EaL">
-                                <rect key="frame" x="284" y="188" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien9.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJN-Ua-ZlC">
-                                <rect key="frame" x="490" y="319" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
-                                <state key="normal" title="NEXT ROUND">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="I73-Eq-BfX" kind="show" id="4xS-zI-cot"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="pYX-rK-IyP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GWD-Ky-NGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2807" y="511"/>
-        </scene>
-        <!--Addition Q4-->
-        <scene sceneID="cok-tQ-1eU">
-            <objects>
-                <viewController title="Addition Q4" id="2Sm-gU-eSl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hde-Dz-mvL">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="halfearth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zdX-hp-iGN">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="KNl-AB-yf6">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="MhI-p4-InF">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="s26-Wd-ks5">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="IJC-F1-oX5">
-                                <rect key="frame" x="21" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="7 + 2 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="IPy-5I-ZFH">
-                                <rect key="frame" x="251" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCc-CG-qvs">
-                                <rect key="frame" x="483" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX2-Ox-qMS">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien1.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-op-rnL">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien9.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-1U-9Z9">
-                                <rect key="frame" x="302" y="179" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien7.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5j-iX-rOR">
-                                <rect key="frame" x="483" y="317" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
-                                <state key="normal" title="NEXT ROUND">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MqI-bb-ij9" kind="show" id="SJg-Ey-PUL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="RGN-IO-dOC"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qXN-31-shv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2825" y="-871"/>
-        </scene>
-        <!--Subtraction Q4-->
-        <scene sceneID="SnL-iH-4gL">
-            <objects>
-                <viewController title="Subtraction Q4" id="Wz6-Kk-6JF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k8T-Xq-dGj">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6YS-Jj-qW5">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 0/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="wYW-vH-BfW">
-                                <rect key="frame" x="266" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gr1-A7-K3y">
-                                <rect key="frame" x="36" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-S7-lfd">
-                                <rect key="frame" x="486" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-mh-Nbp">
-                                <rect key="frame" x="36" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="7 - 4 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="s3R-gD-jlM">
-                                <rect key="frame" x="266" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-bo-1xS">
-                                <rect key="frame" x="486" y="322" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-gX-JqP">
-                                <rect key="frame" x="165" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien3.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBn-WA-w6H">
-                                <rect key="frame" x="490" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien6.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOS-Xh-coO">
-                                <rect key="frame" x="284" y="188" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien0.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btI-Il-X4y">
-                                <rect key="frame" x="483" y="317" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
-                                <state key="normal" title="NEXT ROUND">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dIU-Ra-W5n" kind="show" id="vze-GK-gML"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="VaT-Ka-Viq"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4AD-Od-7wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2806" y="1513"/>
+            <point key="canvasLocation" x="2239.4302848575712" y="1684"/>
         </scene>
         <!--Choose Level-->
         <scene sceneID="o1j-4M-ep6">
@@ -974,7 +824,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CWo-Pz-t2Y" kind="show" id="ruK-Zn-RSf"/>
+                                    <segue destination="CWo-Pz-t2Y" kind="show" id="Y7W-If-TnQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="qoM-2q-zwU">
@@ -986,7 +836,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="plus.png"/>
                                 <connections>
-                                    <segue destination="CWo-Pz-t2Y" kind="show" id="4oK-8K-d86"/>
+                                    <segue destination="CWo-Pz-t2Y" kind="show" id="dld-le-Yj7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pya-Ig-SXg">
@@ -1019,98 +869,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38J-pI-kV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1003.4482758620691" y="32.799999999999997"/>
-        </scene>
-        <!--Addition Q3-->
-        <scene sceneID="rrs-vI-Wg7">
-            <objects>
-                <viewController title="Addition Q3" id="Q5m-kZ-TOh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bES-aN-rBr">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="halfearth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zcT-G9-sJD">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="WAVE: 2/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-XZ-Gyg">
-                                <rect key="frame" x="251" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="ROUND: 1/2" textAlignment="center" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="HFo-qY-fEs">
-                                <rect key="frame" x="21" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text=" SCORE:" minimumFontSize="17" background="Empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="VlF-hk-6Xy">
-                                <rect key="frame" x="483" y="20" width="164" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-6L-tQW">
-                                <rect key="frame" x="21" y="321" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="1 + 4 = _" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="8" background="ques.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqn-IA-zPD">
-                                <rect key="frame" x="251" y="321" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mne-ow-4Jq">
-                                <rect key="frame" x="483" y="321" width="164" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
-                                <state key="normal" title="QUIT" backgroundImage="shm.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCf-lg-waU">
-                                <rect key="frame" x="145" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien4.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-Zp-HDq">
-                                <rect key="frame" x="470" y="84" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien5.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3y-qg-B8Z">
-                                <rect key="frame" x="264" y="188" width="62" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="alien0.png"/>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-aC-bqQ">
-                                <rect key="frame" x="483" y="321" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="16"/>
-                                <state key="normal" title="NEXT ROUND">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2Sm-gU-eSl" kind="show" id="ohU-U2-ACV"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="B0K-gb-eHJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W0Q-1m-RTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2023" y="-871"/>
+            <point key="canvasLocation" x="1794.1529235382311" y="32.799999999999997"/>
         </scene>
         <!--Help-->
         <scene sceneID="UOC-bN-Fve">
@@ -1128,9 +887,6 @@
                                 <rect key="frame" x="198" y="300" width="275" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Main Menu.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WRt-8X-SXW"/>
-                                </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv9-I6-2LF">
                                 <rect key="frame" x="196" y="20" width="275" height="55"/>
@@ -1178,7 +934,6 @@ If you want to quit the game or need to read the help again,  tap the menu but
         <image name="Settings and High Score.png" width="307" height="58"/>
         <image name="Settings.png" width="304" height="57"/>
         <image name="Story.png" width="309" height="57"/>
-        <image name="alien0.png" width="399" height="621"/>
         <image name="alien1.png" width="399" height="621"/>
         <image name="alien2.png" width="399" height="621"/>
         <image name="alien3.png" width="399" height="621"/>
@@ -1188,6 +943,7 @@ If you want to quit the game or need to read the help again,  tap the menu but
         <image name="alien7.png" width="399" height="621"/>
         <image name="alien8.png" width="399" height="621"/>
         <image name="alien9.png" width="399" height="621"/>
+        <image name="cross.png" width="1241" height="1181"/>
         <image name="halfearth.jpg" width="1920" height="1080"/>
         <image name="instructions.png" width="306" height="56"/>
         <image name="interior.jpg" width="1920" height="1152"/>
@@ -1195,15 +951,20 @@ If you want to quit the game or need to read the help again,  tap the menu but
         <image name="plus.png" width="220" height="230"/>
         <image name="pug left.gif" width="336" height="265"/>
         <image name="pugFly.gif" width="336" height="265"/>
+        <image name="pugHurt.gif" width="336" height="265"/>
         <image name="ques.png" width="304" height="56"/>
         <image name="sbFly.gif" width="477" height="345"/>
+        <image name="sbHurt.gif" width="345" height="477"/>
         <image name="shm.png" width="306" height="55"/>
         <image name="superboy.png" width="477" height="345"/>
+        <image name="tick.png" width="1280" height="1266"/>
         <image name="whiteSquare.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="qQ0-sd-81X"/>
         <segue reference="U4A-Ab-bVY"/>
-        <segue reference="ruK-Zn-RSf"/>
-        <segue reference="7iP-aU-uHo"/>
+        <segue reference="VYa-BF-eTK"/>
+        <segue reference="Y7W-If-TnQ"/>
+        <segue reference="vXE-3u-Ryl"/>
     </inferredMetricsTieBreakers>
 </document>
